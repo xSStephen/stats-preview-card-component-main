@@ -33,7 +33,7 @@ main {
 .description {
   background-color: hsl(244, 38%, 16%);
   grid-area: description;
-  width: 80vh;
+  width: 65vh;
   padding: 5rem;
 }
 
@@ -46,18 +46,40 @@ main {
 }
 
 .description > p {
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-right: 3rem;
 }
 
 .stats {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1rem;
+}
+
+.templates {
+  margin: 0 4rem 0 4rem;
 }
 
 /* Picture */
+
+.image {
+  width: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .image > img {
   display: block;
   grid-area: image;
-  max-width: 100%;
-  height: auto;
+  width: 100vh;
+  height: 60vh;
 }
