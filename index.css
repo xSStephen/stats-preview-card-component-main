@@ -27,6 +27,7 @@ main {
   display: grid;
   grid-template-areas: "description image";
   gap: 0;
+  height: 55vh;
 }
 
 /* Description area */
@@ -52,7 +53,7 @@ main {
 
 .stats {
   display: flex;
-  margin-top: 8rem;
+  margin-top: 6.5rem;
 }
 
 h3 {
@@ -77,9 +78,16 @@ p {
   align-items: center;
   overflow: hidden;
 }
+
 .image > img {
   display: block;
   grid-area: image;
   width: 100vh;
   height: 60vh;
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: "image" "description";
+  }
+} ;
